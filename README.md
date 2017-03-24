@@ -1,5 +1,5 @@
 # Processor-Performance-Control
-_This is a shell Script_
+_This is a shell Script_ **Tested on Intel Processors**
 
 **Things required**
 Permission to read/write to scaling_governor. It uses the following path "/sys/devices/system/cpu/cpu{#}/cpufreq/scaling_governor"
