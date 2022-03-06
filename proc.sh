@@ -20,7 +20,7 @@ function changeGovernor {
     do
       echo "schedutil" > /sys/devices/system/cpu/cpu$num/cpufreq/scaling_governor
     done
-  echo "Running in performance"
+  echo "Scheduler is in control"
   else
     echo "Invalid input"
   fi
