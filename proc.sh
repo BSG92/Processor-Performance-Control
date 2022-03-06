@@ -15,6 +15,12 @@ function changeGovernor {
         echo "performance" > /sys/devices/system/cpu/cpu$num/cpufreq/scaling_governor
       done
     echo "Running in performance"
+  elif [ "$INPUT" == "scheduler" ]; then
+  for (( num = 0; num < $NPROCS; num++ ))
+    do
+      echo "schedutil" > /sys/devices/system/cpu/cpu$num/cpufreq/scaling_governor
+    done
+  echo "Running in performance"
   else
     echo "Invalid input"
   fi
